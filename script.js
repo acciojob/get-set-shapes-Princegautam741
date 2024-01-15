@@ -49,23 +49,6 @@ class Square extends Rectangle {
   }
 }
 
-// Example usage
-const rectangle = new Rectangle(5, 8);
-console.log("Rectangle Area:", rectangle.getArea()); // Output: 40
-console.log("Rectangle Width:", rectangle.width); // Output: 5
-console.log("Rectangle Height:", rectangle.height); // Output: 8
-
-const square = new Square(4);
-console.log("Square Area:", square.getArea()); // Output: 16
-console.log("Square Perimeter:", square.getPerimeter()); // Output: 16
-console.log("Square Width:", square.width); // Output: 4
-console.log("Square Height:", square.height); // Output: 4
-
-// Modifying width and height using setters
-rectangle.width = 10;
-rectangle.height = 6;
-console.log("Modified Rectangle Area:", rectangle.getArea()); // Output: 60
-
-square.width = 6;
-console.log("Modified Square Area:", square.getArea()); // Output: 36
-console.log("Modified Square Perimeter:", square.getPerimeter()); // Output: 24
+// Attach classes to the window object
+window.Rectangle = Rectangle;
+window.Square = Square;
